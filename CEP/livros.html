@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pelotas Conecta Estudante - Livros</title>
+
+    <!-- Tipografia (Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./sidebar.js" defer></script>
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Pular para o conteúdo</a>
+
+    <div class="app-layout">
+      <div id="sidebar-slot"></div>
+
+      <main id="main-content" class="main-content" tabindex="-1">
+        <header class="page-header">
+          <h1 class="page-title">Livros</h1>
+          <p class="page-subtitle">
+            Acervo colaborativo para empréstimo, doação e troca de livros acadêmicos entre estudantes.
+          </p>
+        </header>
+
+        <!-- Barra de Busca -->
+        <section class="search-section" aria-label="Pesquisar livros">
+          <label for="search-input" class="search-label">Buscar livro</label>
+          <form class="search-bar" role="search">
+            <input
+              type="search"
+              id="search-input"
+              name="q"
+              class="search-input"
+              placeholder="Digite o título, autor, ISBN ou disciplina..."
+            />
+            <button type="submit" class="search-button">Buscar</button>
+          </form>
+        </section>
+
+        <!-- Estante de Livros -->
+        <section class="books-grid" aria-label="Livros disponíveis">
+          <!-- Livro 1 -->
+          <article class="book-card">
+            <div class="book-cover">
+              <span class="book-tag book-tag--loan">Empréstimo</span>
+              <div class="book-spine-mockup">
+                <svg class="book-cover-icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path class="icon-primary" d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20" />
+                  <path class="icon-accent" d="M8 7h6M8 11h4" />
+                </svg>
+                <span class="book-edition-label">7ª Edição</span>
+              </div>
+            </div>
+            <div class="book-body">
+              <span class="book-author">James Stewart</span>
+              <h2 class="book-title">Cálculo — Volume 1</h2>
+              <p class="book-meta">
+                <span>Seminovo • Retirada no IFSul Pelotas</span>
+              </p>
+              <button type="button" class="card-button">Solicitar livro</button>
+            </div>
+          </article>
+
+          <!-- Livro 2 -->
+          <article class="book-card">
+            <div class="book-cover">
+              <span class="book-tag">Doação</span>
+              <div class="book-spine-mockup">
+                <svg class="book-cover-icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <polyline class="icon-primary" points="16 18 22 12 16 6" />
+                  <polyline class="icon-primary" points="8 6 2 12 8 18" />
+                  <line class="icon-accent" x1="14.5" y1="4" x2="9.5" y2="20" />
+                </svg>
+                <span class="book-edition-label">3ª Edição</span>
+              </div>
+            </div>
+            <div class="book-body">
+              <span class="book-author">Thomas H. Cormen</span>
+              <h2 class="book-title">Algoritmos: Teoria e Prática</h2>
+              <p class="book-meta">
+                <span>Bom estado • Retirada no Centro</span>
+              </p>
+              <button type="button" class="card-button">Solicitar livro</button>
+            </div>
+          </article>
+
+          <!-- Livro 3 -->
+          <article class="book-card">
+            <div class="book-cover">
+              <span class="book-tag">Troca</span>
+              <div class="book-spine-mockup">
+                <svg class="book-cover-icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <ellipse class="icon-accent" cx="12" cy="5" rx="9" ry="3" />
+                  <path class="icon-primary" d="M3 5v14a9 3 0 0 0 18 0V5" />
+                  <path class="icon-primary" d="M3 12a9 3 0 0 0 18 0" />
+                </svg>
+                <span class="book-edition-label">6ª Edição</span>
+              </div>
+            </div>
+            <div class="book-body">
+              <span class="book-author">Abraham Silberschatz</span>
+              <h2 class="book-title">Sistema de Banco de Dados</h2>
+              <p class="book-meta">
+                <span>Conservado • Câmpus Porto UFPel</span>
+              </p>
+              <button type="button" class="card-button">Solicitar livro</button>
+            </div>
+          </article>
+
+          <!-- Livro 4 -->
+          <article class="book-card">
+            <div class="book-cover">
+              <span class="book-tag book-tag--loan">Empréstimo</span>
+              <div class="book-spine-mockup">
+                <svg class="book-cover-icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <rect class="icon-primary" x="2" y="3" width="20" height="14" rx="2" />
+                  <line class="icon-accent" x1="8" y1="21" x2="16" y2="21" />
+                  <line class="icon-accent" x1="12" y1="17" x2="12" y2="21" />
+                </svg>
+                <span class="book-edition-label">5ª Edição</span>
+              </div>
+            </div>
+            <div class="book-body">
+              <span class="book-author">Andrew S. Tanenbaum</span>
+              <h2 class="book-title">Redes de Computadores</h2>
+              <p class="book-meta">
+                <span>Seminovo • Retirada no IFSul Pelotas</span>
+              </p>
+              <button type="button" class="card-button">Solicitar livro</button>
+            </div>
+          </article>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

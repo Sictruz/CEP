@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pelotas Conecta Estudante - Página Inicial</title>
+
+    <!-- Open Graph / Compartilhamento -->
+    <meta property="og:title" content="Pelotas Conecta Estudante" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:title" content="Pelotas Conecta Estudante" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Tipografia (Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    />
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Pular para o conteúdo</a>
+
+    <div class="app-layout">
+      <!-- Barra Lateral (Fonte principal clonada para as outras páginas via sidebar.js) -->
+      <aside class="sidebar">
+        <div class="sidebar-brand" aria-label="Pelotas Conecta Estudante">
+          <svg class="brand-logo-svg" viewBox="0 0 28 32" aria-hidden="true">
+            <path class="logo-primary" d="M6 28V5h9a6.5 6.5 0 0 1 0 13H6" />
+            <circle class="logo-accent" cx="15" cy="11.5" r="2.2" />
+          </svg>
+          <span class="brand-name" aria-hidden="true">
+            <span class="brand-word-first">elotas</span>
+            <span class="brand-word">Conecta</span>
+            <span class="brand-word">Estudante</span>
+          </span>
+        </div>
+
+        <nav class="sidebar-nav" aria-label="Menu Principal">
+          <span class="nav-section-title">Navegar</span>
+          <ul class="nav-list">
+            <li>
+              <a href="index.html" class="nav-item active" aria-current="page">
+                <svg class="icon-duotone" viewBox="0 0 24 24" aria-hidden="true">
+                  <path class="icon-accent" d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" />
+                  <path class="icon-primary" d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                </svg>
+                <span>Página Inicial</span>
+              </a>
+            </li>
+            <li>
+              <a href="materiais.html" class="nav-item">
+                <svg class="icon-duotone" viewBox="0 0 24 24" aria-hidden="true">
+                  <path class="icon-primary" d="M12 22v-9" />
+                  <path class="icon-primary" d="M15.17 2.21a1.67 1.67 0 0 1 1.63 0L21 4.57a1.93 1.93 0 0 1 0 3.36L8.82 14.79a1.655 1.655 0 0 1-1.64 0L3 12.43a1.93 1.93 0 0 1 0-3.36z" />
+                  <path class="icon-primary" d="M20 13v3.87a2.06 2.06 0 0 1-1.11 1.83l-6 3.08a1.93 1.93 0 0 1-1.78 0l-6-3.08A2.06 2.06 0 0 1 4 16.87V13" />
+                  <path class="icon-accent" d="M21 12.43a1.93 1.93 0 0 0 0-3.36L8.83 2.2a1.64 1.64 0 0 0-1.63 0L3 4.57a1.93 1.93 0 0 0 0 3.36l12.18 6.86a1.636 1.636 0 0 0 1.63 0z" />
+                </svg>
+                <span>Materiais</span>
+              </a>
+            </li>
+            <li>
+              <a href="livros.html" class="nav-item">
+                <svg class="icon-duotone" viewBox="0 0 24 24" aria-hidden="true">
+                  <rect class="icon-primary" x="3" y="3" width="8" height="18" rx="1" />
+                  <path class="icon-primary" d="M7 3v18" />
+                  <path class="icon-accent" d="M20.4 18.9c.2.5-.1 1.1-.6 1.3l-1.9.7c-.5.2-1.1-.1-1.3-.6L11.1 5.1c-.2-.5.1-1.1.6-1.3l1.9-.7c.5-.2 1.1.1 1.3.6Z" />
+                </svg>
+                <span>Livros</span>
+              </a>
+            </li>
+            <li>
+              <a href="eventos.html" class="nav-item">
+                <svg class="icon-duotone" viewBox="0 0 24 24" aria-hidden="true">
+                  <path class="icon-primary" d="M21 10.69V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h7.25" />
+                  <path class="icon-accent" d="M16 2v3" />
+                  <path class="icon-accent" d="M8 2v3" />
+                  <path class="icon-accent" d="M3 9h18" />
+                  <circle class="icon-accent" cx="18" cy="17" r="3" />
+                  <path class="icon-accent" d="m22 21-1.875-1.875" />
+                </svg>
+                <span>Eventos</span>
+              </a>
+            </li>
+            <li>
+              <a href="grupos-estudo.html" class="nav-item">
+                <svg class="icon-duotone" viewBox="0 0 24 24" aria-hidden="true">
+                  <path class="icon-primary" d="M17 21a5 5 0 0 0-10 0" />
+                  <path class="icon-accent" d="M22 10.5a3.5 3.5 0 0 0-5.507-2.868" />
+                  <path class="icon-accent" d="M7.507 7.632A3.5 3.5 0 0 0 2 10.5" />
+                  <circle class="icon-accent" cx="12" cy="13" r="3" />
+                  <circle class="icon-accent" cx="18.5" cy="4.5" r="2.5" />
+                  <circle class="icon-accent" cx="5.5" cy="4.5" r="2.5" />
+                </svg>
+                <span>Grupos de Estudo</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="sidebar-footer">
+          <a href="login.html" class="nav-item profile-link">
+            <svg class="icon-duotone" viewBox="0 0 24 24" aria-hidden="true">
+              <path class="icon-primary" d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+              <circle class="icon-accent" cx="12" cy="7" r="4" />
+            </svg>
+            <span>Meu perfil</span>
+          </a>
+        </div>
+      </aside>
+
+      <!-- Conteúdo Principal -->
+      <main id="main-content" class="main-content" tabindex="-1">
+        <!-- Hero Banner de Destaque -->
+        <section class="hero-banner" aria-label="Boas-vindas e busca">
+          <div class="hero-banner-content">
+            <span class="hero-eyebrow">Comunidade Acadêmica • Pelotas/RS</span>
+            <h1 class="hero-title">Tudo o que você precisa para estudar em um só lugar.</h1>
+            <p class="hero-subtitle">
+              Compartilhe apostilas, encontre livros para empréstimo, participe de grupos de estudo e fique por dentro dos eventos da região.
+            </p>
+
+            <form class="search-bar" role="search">
+              <input
+                type="search"
+                id="search-input"
+                name="q"
+                class="search-input"
+                placeholder="Busque por Estrutura de Dados, Cálculo, IFSul, UFPel..."
+              />
+              <button type="submit" class="search-button">Buscar</button>
+            </form>
+
+            <div class="quick-tags">
+              <span class="quick-tags-label">Em alta:</span>
+              <a href="materiais.html" class="quick-tag-pill">IFSul</a>
+              <a href="materiais.html" class="quick-tag-pill">UFPel</a>
+              <a href="materiais.html" class="quick-tag-pill">Provas Antigas</a>
+              <a href="livros.html" class="quick-tag-pill">Cálculo I</a>
+              <a href="grupos-estudo.html" class="quick-tag-pill">Programação</a>
+            </div>
+          </div>
+
+          <!-- Mascote Formiguinha de Pelotas -->
+          <svg
+            class="hero-mascot"
+            viewBox="0 -6 64 70"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <!-- Antenas saindo das laterais -->
+            <path class="icon-accent ant-antenna-left" d="M23 15 C18 8, 13 9, 11 12" />
+            <path class="icon-accent ant-antenna-right" d="M41 15 C46 8, 51 9, 53 12" />
+
+            <!-- Chapéu de Estudante (Capelo Dourado) -->
+            <polygon class="icon-primary" points="32,1 47,7 32,13 17,7" />
+            <path class="icon-primary" d="M23 10.5 V14.5 C23 16, 41 16, 41 14.5 V10.5" />
+            <!-- Pingente (Tassel) do capelo -->
+            <path class="icon-primary" d="M46 7.5 L48 15" />
+            <circle class="icon-primary" cx="48" cy="16" r="1" />
+
+            <!-- Patinhas -->
+            <path class="icon-primary" d="M24 32 L12 27 L9 32" />
+            <path class="icon-primary" d="M40 32 L52 27 L55 32" />
+            <path class="icon-primary" d="M23 38 L11 39 L9 45" />
+            <path class="icon-primary" d="M41 38 L53 39 L55 45" />
+            <path class="icon-primary" d="M24 46 L14 52 L13 58" />
+            <path class="icon-primary" d="M40 46 L50 52 L51 58" />
+
+            <!-- Corpo da Formiguinha -->
+            <circle class="icon-primary" cx="32" cy="22" r="6.5" />
+            <ellipse class="icon-accent" cx="32" cy="34.5" rx="5.5" ry="6" />
+            <ellipse class="icon-primary" cx="32" cy="49" rx="8.5" ry="10" />
+
+            <!-- Listras doces no abdômen -->
+            <path class="icon-accent" d="M25.5 46 Q32 48.5 38.5 46" />
+            <path class="icon-accent" d="M25.5 52 Q32 54.5 38.5 52" />
+          </svg>
+        </section>
+
+        <!-- 1. Atalhos Rápidos por Categoria -->
+        <section class="quick-stats-grid" aria-label="Acesso rápido por seção">
+          <a href="materiais.html" class="stat-card">
+            <div class="stat-icon-wrap">
+              <svg class="icon-duotone" viewBox="0 0 24 24" aria-hidden="true">
+                <path class="icon-primary" d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" />
+                <path class="icon-accent" d="M14 2v4a2 2 0 0 0 2 2h4" />
+              </svg>
+            </div>
+            <div class="stat-info">
+              <span class="stat-number">48</span>
+              <span class="stat-label">Materiais disponíveis</span>
+            </div>
+          </a>
+
+          <a href="livros.html" class="stat-card">
+            <div class="stat-icon-wrap">
+              <svg class="icon-duotone" viewBox="0 0 24 24" aria-hidden="true">
+                <rect class="icon-primary" x="3" y="3" width="8" height="18" rx="1" />
+                <path class="icon-accent" d="M20.4 18.9c.2.5-.1 1.1-.6 1.3l-1.9.7c-.5.2-1.1-.1-1.3-.6L11.1 5.1c-.2-.5.1-1.1.6-1.3l1.9-.7c.5-.2 1.1.1 1.3.6Z" />
+              </svg>
+            </div>
+            <div class="stat-info">
+              <span class="stat-number">19</span>
+              <span class="stat-label">Livros no acervo</span>
+            </div>
+          </a>
+
+          <a href="eventos.html" class="stat-card">
+            <div class="stat-icon-wrap">
+              <svg class="icon-duotone" viewBox="0 0 24 24" aria-hidden="true">
+                <rect class="icon-primary" x="3" y="4" width="18" height="18" rx="2" />
+                <path class="icon-accent" d="M16 2v4M8 2v4M3 10h18" />
+              </svg>
+            </div>
+            <div class="stat-info">
+              <span class="stat-number">6</span>
+              <span class="stat-label">Próximos eventos</span>
+            </div>
+          </a>
+
+          <a href="grupos-estudo.html" class="stat-card">
+            <div class="stat-icon-wrap">
+              <svg class="icon-duotone" viewBox="0 0 24 24" aria-hidden="true">
+                <path class="icon-primary" d="M17 21a5 5 0 0 0-10 0" />
+                <circle class="icon-accent" cx="12" cy="13" r="3" />
+              </svg>
+            </div>
+            <div class="stat-info">
+              <span class="stat-number">11</span>
+              <span class="stat-label">Grupos ativos</span>
+            </div>
+          </a>
+        </section>
+
+        <!-- 2. Destaques Recentes da Comunidade -->
+        <section class="home-section" aria-label="Destaques recentes">
+          <div class="section-header-row">
+            <h2 class="section-title">Destaques da Comunidade</h2>
+            <a href="materiais.html" class="section-link">Explorar tudo →</a>
+          </div>
+
+          <div class="study-materials-grid">
+            <!-- Destaque de Material -->
+            <article class="doc-card">
+              <div class="doc-card-top">
+                <div class="doc-icon-box">
+                  <svg class="icon-duotone" viewBox="0 0 24 24" aria-hidden="true">
+                    <path class="icon-primary" d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" />
+                    <path class="icon-accent" d="M14 2v4a2 2 0 0 0 2 2h4" />
+                  </svg>
+                </div>
+                <div class="doc-badges">
+                  <span class="card-badge">MATERIAL • RESUMO</span>
+                  <span class="doc-file-info">PDF • 14 págs</span>
+                </div>
+              </div>
+              <div class="doc-body">
+                <span class="doc-subject">Estrutura de Dados • IFSul</span>
+                <h3 class="card-title">Ponteiros, Listas Encadeadas e Pilhas em C++</h3>
+                <p class="card-description">
+                  Guia comentado com diagramas de alocação dinâmica de memória e exemplos práticos.
+                </p>
+                <a href="materiais.html" class="card-button">Acessar material</a>
+              </div>
+            </article>
+
+            <!-- Destaque de Grupo de Estudo -->
+            <article class="group-card">
+              <div class="group-card-header">
+                <span class="card-badge">GRUPO DE ESTUDO</span>
+                <span class="group-members">6/10 membros</span>
+              </div>
+              <h3 class="card-title">Revisão de Árvores e Grafos</h3>
+              <p class="card-description">
+                Resolução de exercícios práticos e preparação conjunta para a próxima avaliação.
+              </p>
+              <div class="group-meta">
+                <div class="group-meta-item">
+                  <span><strong>Quando:</strong> Terças e Quintas, 18h30</span>
+                </div>
+                <div class="group-meta-item">
+                  <span><strong>Onde:</strong> Biblioteca do Câmpus</span>
+                </div>
+              </div>
+              <a href="grupos-estudo.html" class="card-button">Ver grupo</a>
+            </article>
+
+            <!-- Destaque de Livro -->
+            <article class="doc-card">
+              <div class="doc-card-top">
+                <div class="doc-icon-box">
+                  <svg class="icon-duotone" viewBox="0 0 24 24" aria-hidden="true">
+                    <rect class="icon-primary" x="3" y="3" width="8" height="18" rx="1" />
+                    <path class="icon-accent" d="M20.4 18.9c.2.5-.1 1.1-.6 1.3l-1.9.7c-.5.2-1.1-.1-1.3-.6L11.1 5.1c-.2-.5.1-1.1.6-1.3l1.9-.7c.5-.2 1.1.1 1.3.6Z" />
+                  </svg>
+                </div>
+                <div class="doc-badges">
+                  <span class="card-badge">LIVRO • EMPRÉSTIMO</span>
+                  <span class="doc-file-info">7ª Edição</span>
+                </div>
+              </div>
+              <div class="doc-body">
+                <span class="doc-subject">James Stewart</span>
+                <h3 class="card-title">Cálculo — Volume 1</h3>
+                <p class="card-description">
+                  Exemplar seminovo disponível para empréstimo semestral com retirada no IFSul Pelotas.
+                </p>
+                <a href="livros.html" class="card-button">Ver livro</a>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- 3. Próximo Evento em Destaque -->
+        <section class="home-section" aria-label="Próximo evento">
+          <div class="section-header-row">
+            <h2 class="section-title">Próximo Evento Acadêmico</h2>
+            <a href="eventos.html" class="section-link">Todos os eventos →</a>
+          </div>
+
+          <article class="featured-event-banner">
+            <div class="featured-event-left">
+              <div class="event-date-box">
+                <span class="event-date-day">25</span>
+                <span class="event-date-month">NOV</span>
+              </div>
+              <div class="featured-event-details">
+                <span class="card-badge">GRATUITO • CERTIFICADO</span>
+                <h3 class="featured-event-title">
+                  Semana Acadêmica de Tecnologia e Sistemas para Internet
+                </h3>
+                <p class="featured-event-meta">
+                  19h00 • Auditório Enilda Feistauer — IFSul Câmpus Pelotas
+                </p>
+              </div>
+            </div>
+            <div class="featured-event-action">
+              <a href="eventos.html" class="card-button">Ver detalhes</a>
+            </div>
+          </article>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 1. Troque apenas o nome da página no título -->
+    <title>Pelotas Conecta Estudante - Materiais</title>
+
+    <!-- Tipografia (Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    />
+
+    <!-- CSS único e Script da Sidebar -->
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./sidebar.js" defer></script>
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Pular para o conteúdo</a>
+
+    <div class="app-layout">
+      <!-- 2. Onde a sidebar do index.html entra automaticamente -->
+      <div id="sidebar-slot"></div>
+
+      <!-- 3. Conteúdo exclusivo da página nova começa aqui -->
+      <main id="main-content" class="main-content" tabindex="-1">
+        <header class="page-header">
+          <h1 class="page-title">Materiais</h1>
+          <p class="page-subtitle">Subtítulo desta seção.</p>
+        </header>
+   <!-- Barra de Busca -->
+        <section class="search-section" aria-label="Pesquisar materiais">
+          <label for="search-input" class="search-label">Busque</label>
+          <form class="search-bar" role="search">
+            <input
+              type="search"
+              id="search-input"
+              name="q"
+              class="search-input"
+              placeholder="Digite o título, disciplina ou assunto..."
+            />
+            <button type="submit" class="search-button">Buscar</button>
+          </form>
+        </section>
+
+        <!-- Grade de Materiais -->
+        <section class="materials-grid" aria-label="Materiais em destaque">
+          <article class="material-card">
+            <div class="card-image-placeholder">
+              <span>Imagem</span>
+            </div>
+            <div class="card-body">
+              <span class="card-badge">MATERIAL</span>
+              <h2 class="card-title">Título do Material 1</h2>
+              <p class="card-description">
+                Descrição resumida do conteúdo de estudo disponível para os estudantes.
+              </p>
+              <button type="button" class="card-button">Ver material</button>
+            </div>
+          </article>
+
+          <article class="material-card">
+            <div class="card-image-placeholder">
+              <span>Imagem</span>
+            </div>
+            <div class="card-body">
+              <span class="card-badge">MATERIAL</span>
+              <h2 class="card-title">Título do Material 2</h2>
+              <p class="card-description">
+                Descrição resumida do conteúdo de estudo disponível para os estudantes.
+              </p>
+              <button type="button" class="card-button">Ver material</button>
+            </div>
+          </article>
+
+          <article class="material-card">
+            <div class="card-image-placeholder">
+              <span>Imagem</span>
+            </div>
+            <div class="card-body">
+              <span class="card-badge">MATERIAL</span>
+              <h2 class="card-title">Título do Material 3</h2>
+              <p class="card-description">
+                Descrição resumida do conteúdo de estudo disponível para os estudantes.
+              </p>
+              <button type="button" class="card-button">Ver material</button>
+            </div>
+          </article>
+
+          <article class="material-card">
+            <div class="card-image-placeholder">
+              <span>Imagem</span>
+            </div>
+            <div class="card-body">
+              <span class="card-badge">MATERIAL</span>
+              <h2 class="card-title">Título do Material 4</h2>
+              <p class="card-description">
+                Descrição resumida do conteúdo de estudo disponível para os estudantes.
+              </p>
+              <button type="button" class="card-button">Ver material</button>
+            </div>
+          </article>
+
+          <article class="material-card">
+            <div class="card-image-placeholder">
+              <span>Imagem</span>
+            </div>
+            <div class="card-body">
+              <span class="card-badge">MATERIAL</span>
+              <h2 class="card-title">Título do Material 5</h2>
+              <p class="card-description">
+                Descrição resumida do conteúdo de estudo disponível para os estudantes.
+              </p>
+              <button type="button" class="card-button">Ver material</button>
+            </div>
+          </article>
+
+          <article class="material-card">
+            <div class="card-image-placeholder">
+              <span>Imagem</span>
+            </div>
+            <div class="card-body">
+              <span class="card-badge">MATERIAL</span>
+              <h2 class="card-title">Título do Material 6</h2>
+              <p class="card-description">
+                Descrição resumida do conteúdo de estudo disponível para os estudantes.
+              </p>
+              <button type="button" class="card-button">Ver material</button>
+            </div>
+          </article>
+
+          <article class="material-card">
+            <div class="card-image-placeholder">
+              <span>Imagem</span>
+            </div>
+            <div class="card-body">
+              <span class="card-badge">MATERIAL</span>
+              <h2 class="card-title">Título do Material 7</h2>
+              <p class="card-description">
+                Descrição resumida do conteúdo de estudo disponível para os estudantes.
+              </p>
+              <button type="button" class="card-button">Ver material</button>
+            </div>
+          </article>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

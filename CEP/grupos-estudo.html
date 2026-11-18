@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pelotas Conecta Estudante - Grupos de Estudo</title>
+
+    <!-- Tipografia (Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./sidebar.js" defer></script>
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Pular para o conteúdo</a>
+
+    <div class="app-layout">
+      <div id="sidebar-slot"></div>
+
+      <main id="main-content" class="main-content" tabindex="-1">
+        <header class="page-header">
+          <h1 class="page-title">Grupos de Estudo</h1>
+          <p class="page-subtitle">
+            Encontre colegas para revisar conteúdos, resolver listas e preparar trabalhos em equipe.
+          </p>
+        </header>
+
+        <!-- Barra de Busca -->
+        <section class="search-section" aria-label="Pesquisar grupos de estudo">
+          <label for="search-input" class="search-label">Buscar grupo</label>
+          <form class="search-bar" role="search">
+            <input
+              type="search"
+              id="search-input"
+              name="q"
+              class="search-input"
+              placeholder="Digite a disciplina, instituição ou turno..."
+            />
+            <button type="submit" class="search-button">Buscar</button>
+          </form>
+        </section>
+
+        <!-- Grade de Grupos de Estudo -->
+        <section class="groups-grid" aria-label="Grupos disponíveis">
+          <article class="group-card">
+            <div class="group-card-header">
+              <span class="card-badge">ESTRUTURA DE DADOS</span>
+              <span class="group-members">6/10 membros</span>
+            </div>
+            <h2 class="card-title">Revisão de Árvores e Grafos</h2>
+            <p class="card-description">
+              Resolução de exercícios práticos em C++ e preparação para a segunda avaliação da disciplina.
+            </p>
+            <div class="group-meta">
+              <div class="group-meta-item">
+                <span><strong>Quando:</strong> Terças e Quintas, 18h30</span>
+              </div>
+              <div class="group-meta-item">
+                <span><strong>Onde:</strong> Biblioteca do Câmpus</span>
+              </div>
+            </div>
+            <button type="button" class="card-button">Participar do grupo</button>
+          </article>
+
+          <article class="group-card">
+            <div class="group-card-header">
+              <span class="card-badge">CÁLCULO I</span>
+              <span class="group-members">8/12 membros</span>
+            </div>
+            <h2 class="card-title">Monitoria Colaborativa de Derivadas</h2>
+            <p class="card-description">
+              Grupo aberto para tirar dúvidas das listas semanais de limites e derivadas com foco em provas antigas.
+            </p>
+            <div class="group-meta">
+              <div class="group-meta-item">
+                <span><strong>Quando:</strong> Quartas, 14h00</span>
+              </div>
+              <div class="group-meta-item">
+                <span><strong>Onde:</strong> Online (Discord)</span>
+              </div>
+            </div>
+            <button type="button" class="card-button">Participar do grupo</button>
+          </article>
+
+          <article class="group-card">
+            <div class="group-card-header">
+              <span class="card-badge">DESENVOLVIMENTO WEB</span>
+              <span class="group-members">4/8 membros</span>
+            </div>
+            <h2 class="card-title">Front-end e Acessibilidade na Prática</h2>
+            <p class="card-description">
+              Troca de feedbacks sobre projetos em HTML, CSS e boas práticas de interface responsiva.
+            </p>
+            <div class="group-meta">
+              <div class="group-meta-item">
+                <span><strong>Quando:</strong> Sábados, 10h00</span>
+              </div>
+              <div class="group-meta-item">
+                <span><strong>Onde:</strong> Online (Google Meet)</span>
+              </div>
+            </div>
+            <button type="button" class="card-button">Participar do grupo</button>
+          </article>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

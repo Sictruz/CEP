@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pelotas Conecta Estudante - Eventos</title>
+
+    <!-- Tipografia (Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./sidebar.js" defer></script>
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Pular para o conteúdo</a>
+
+    <div class="app-layout">
+      <div id="sidebar-slot"></div>
+
+      <main id="main-content" class="main-content" tabindex="-1">
+        <header class="page-header">
+          <h1 class="page-title">Eventos</h1>
+          <p class="page-subtitle">
+            Palestras, semanas acadêmicas, minicursos e encontros estudantis em Pelotas e online.
+          </p>
+        </header>
+
+        <!-- Barra de Busca -->
+        <section class="search-section" aria-label="Pesquisar eventos">
+          <label for="search-input" class="search-label">Buscar evento</label>
+          <form class="search-bar" role="search">
+            <input
+              type="search"
+              id="search-input"
+              name="q"
+              class="search-input"
+              placeholder="Digite o nome do evento, tema ou instituição..."
+            />
+            <button type="submit" class="search-button">Buscar</button>
+          </form>
+        </section>
+
+        <!-- Vitrine de Eventos -->
+        <section class="events-grid" aria-label="Próximos eventos">
+          <!-- Evento 1 -->
+          <article class="event-card">
+            <div class="event-banner">
+              <span class="event-tag event-tag--free">Gratuito • Certificado</span>
+              <svg class="event-banner-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <polyline class="icon-primary" points="16 18 22 12 16 6" />
+                <polyline class="icon-primary" points="8 6 2 12 8 18" />
+                <line class="icon-accent" x1="14.5" y1="4" x2="9.5" y2="20" />
+              </svg>
+            </div>
+            <div class="event-body">
+              <time class="event-date" datetime="2026-11-25T19:00">
+                <svg class="event-inline-icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <rect class="icon-primary" x="3" y="4" width="18" height="18" rx="2" />
+                  <path class="icon-accent" d="M16 2v4M8 2v4M3 10h18" />
+                </svg>
+                <span>QUA, 25 NOV • 19:00</span>
+              </time>
+              <h2 class="event-title">Semana Acadêmica de Tecnologia e Sistemas para Internet</h2>
+              <p class="event-location">
+                <svg class="event-inline-icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path class="icon-primary" d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                  <circle class="icon-accent" cx="12" cy="10" r="3" />
+                </svg>
+                <span>Auditório Enilda Feistauer — IFSul Câmpus Pelotas</span>
+              </p>
+              <button type="button" class="card-button">Ver detalhes</button>
+            </div>
+          </article>
+
+          <!-- Evento 2 -->
+          <article class="event-card">
+            <div class="event-banner">
+              <span class="event-tag">Workshop</span>
+              <svg class="event-banner-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path class="icon-primary" d="M12 20h9" />
+                <path class="icon-primary" d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z" />
+                <path class="icon-accent" d="m15 5 3 3" />
+              </svg>
+            </div>
+            <div class="event-body">
+              <time class="event-date" datetime="2026-11-28T14:00">
+                <svg class="event-inline-icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <rect class="icon-primary" x="3" y="4" width="18" height="18" rx="2" />
+                  <path class="icon-accent" d="M16 2v4M8 2v4M3 10h18" />
+                </svg>
+                <span>SÁB, 28 NOV • 14:00</span>
+              </time>
+              <h2 class="event-title">Oficina Prática de Git, GitHub e Portfólio para Iniciantes</h2>
+              <p class="event-location">
+                <svg class="event-inline-icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path class="icon-primary" d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                  <circle class="icon-accent" cx="12" cy="10" r="3" />
+                </svg>
+                <span>Laboratório 04 — Centro de Engenharias UFPel</span>
+              </p>
+              <button type="button" class="card-button">Ver detalhes</button>
+            </div>
+          </article>
+
+          <!-- Evento 3 -->
+          <article class="event-card">
+            <div class="event-banner">
+              <span class="event-tag event-tag--free">Online • Gratuito</span>
+              <svg class="event-banner-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path class="icon-primary" d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z" />
+                <path class="icon-accent" d="M19 10v2a7 7 0 0 1-14 0v-2" />
+                <line class="icon-primary" x1="12" y1="19" x2="12" y2="22" />
+              </svg>
+            </div>
+            <div class="event-body">
+              <time class="event-date" datetime="2026-12-02T20:00">
+                <svg class="event-inline-icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <rect class="icon-primary" x="3" y="4" width="18" height="18" rx="2" />
+                  <path class="icon-accent" d="M16 2v4M8 2v4M3 10h18" />
+                </svg>
+                <span>QUA, 02 DEZ • 20:00</span>
+              </time>
+              <h2 class="event-title">Roda de Conversa: Primeiros Passos em Estágios de TI</h2>
+              <p class="event-location">
+                <svg class="event-inline-icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <circle class="icon-primary" cx="12" cy="12" r="10" />
+                  <path class="icon-accent" d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                </svg>
+                <span>Transmissão Online — YouTube / Google Meet</span>
+              </p>
+              <button type="button" class="card-button">Ver detalhes</button>
+            </div>
+          </article>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

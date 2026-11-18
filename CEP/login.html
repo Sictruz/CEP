@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pelotas Conecta Estudante - Entrar</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="auth-page">
+      <a href="index.html" class="auth-back-link">← Voltar para a Página Inicial</a>
+
+      <section class="auth-card" aria-labelledby="auth-heading">
+        <!-- Logo Compacta -->
+       <!-- Logo Compacta (Mesma da Sidebar) -->
+        <div class="auth-brand" aria-hidden="true">
+          <svg class="brand-logo-svg" viewBox="0 0 28 32">
+            <path class="logo-primary" d="M6 28V5h9a6.5 6.5 0 0 1 0 13H6" />
+            <circle class="logo-accent" cx="15" cy="11.5" r="2.2" />
+          </svg>
+          <span class="brand-name">
+            <span class="brand-word-first">elotas</span>
+            <span class="brand-word">Conecta</span>
+            <span class="brand-word">Estudante</span>
+          </span>
+        </div>
+
+        <header class="auth-header">
+          <h1 id="auth-heading" class="auth-title">Entrar</h1>
+          <p id="auth-subtitle" class="auth-subtitle">Acesse sua conta ;) </p>
+        </header>
+
+        <!-- Botão Google -->
+        <button type="button" id="google-login-btn" class="google-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+            <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.665-5.17 3.665-9.17Z"/>
+            <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.11-6.72-4.96H1.29v3.14C3.26 21.3 7.31 24 12 24Z"/>
+            <path fill="#FBBC05" d="M5.28 14.24c-.24-.72-.38-1.49-.38-2.24s.14-1.52.38-2.24V6.62H1.29C.47 8.24 0 10.06 0 12s.47 3.76 1.29 5.38l3.99-3.14Z"/>
+            <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.31 0 3.26 2.7 1.29 6.62l3.99 3.14c.95-2.85 3.6-4.96 6.72-4.96Z"/>
+          </svg>
+          <span>Continuar com Google</span>
+        </button>
+
+        <div class="auth-divider">ou com e-mail</div>
+
+        <!-- Formulário de Login -->
+        <form id="form-login" class="auth-form">
+          <div class="form-group">
+            <label for="login-email" class="form-label">E-mail</label>
+            <input type="email" id="login-email" class="form-input" placeholder="nome@ifsul.edu.br" required />
+          </div>
+
+          <div class="form-group">
+            <div class="form-label-row">
+              <label for="login-password" class="form-label">Senha</label>
+              <a href="#" class="auth-link">Esqueceu?</a>
+            </div>
+            <input type="password" id="login-password" class="form-input" placeholder="••••••••" required />
+          </div>
+
+          <button type="submit" class="card-button auth-submit">Entrar</button>
+        </form>
+
+        <!-- Formulário de Cadastro (Oculto até clicar em "Cadastre-se") -->
+        <form id="form-register" class="auth-form" hidden>
+          <div class="form-group">
+            <label for="reg-name" class="form-label">Nome</label>
+            <input type="text" id="reg-name" class="form-input" placeholder="Seu nome" required />
+          </div>
+
+          <div class="form-group">
+            <label for="reg-inst" class="form-label">Instituição</label>
+            <select id="reg-inst" class="form-input" required>
+              <option value="">Selecione...</option>
+              <option value="ifsul">IFSul</option>
+              <option value="ufpel">UFPel</option>
+              <option value="ucpel">UCPel</option>
+              <option value="outra">Outra</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="reg-email" class="form-label">E-mail</label>
+            <input type="email" id="reg-email" class="form-input" placeholder="seuemail@exemplo.com" required />
+          </div>
+
+          <div class="form-group">
+            <label for="reg-password" class="form-label">Senha</label>
+            <input type="password" id="reg-password" class="form-input" placeholder="Mínimo 8 caracteres" minlength="8" required />
+          </div>
+
+          <button type="submit" class="card-button auth-submit">Criar conta</button>
+        </form>
+
+        <p class="auth-switch">
+          <span id="switch-text">Não tem uma conta?</span>
+          <button type="button" id="switch-btn" class="auth-link">Cadastre-se</button>
+        </p>
+      </section>
+    </main>
+
+    <script>
+      const switchBtn = document.getElementById('switch-btn');
+      const switchText = document.getElementById('switch-text');
+      const loginForm = document.getElementById('form-login');
+      const registerForm = document.getElementById('form-register');
+      const heading = document.getElementById('auth-heading');
+      const subtitle = document.getElementById('auth-subtitle');
+
+      let isLogin = true;
+
+      switchBtn.addEventListener('click', () => {
+        isLogin = !isLogin;
+        loginForm.hidden = !isLogin;
+        registerForm.hidden = isLogin;
+        heading.textContent = isLogin ? 'Entrar' : 'Criar conta';
+        subtitle.textContent = isLogin ? 'Acesse sua conta de estudante' : 'Junte-se aos estudantes de Pelotas';
+        switchText.textContent = isLogin ? 'Não tem uma conta?' : 'Já tem uma conta?';
+        switchBtn.textContent = isLogin ? 'Cadastre-se' : 'Fazer login';
+      });
+    </script>
+  </body>
+</html>
